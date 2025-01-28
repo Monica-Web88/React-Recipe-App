@@ -1,6 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from "react";
 import RecipeCard from "./RecipeCard";
 import Context from "./context";
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./styles.css";
 
@@ -27,9 +28,11 @@ const MainLayout = () => {
 
       <div>
         <Context.Provider value={jsonData}>
-          <Row style={{ justifyContent: "center" }}>
-            <RecipeCard />
-          </Row>
+          <Container>
+            <Row style={{ justifyContent: "center" }}>
+              <RecipeCard />
+            </Row>
+          </Container>
         </Context.Provider>
       </div>
     </div>
