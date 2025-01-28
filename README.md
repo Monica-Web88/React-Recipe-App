@@ -1,7 +1,8 @@
 # React-Recipe-App
 Created with CodeSandbox
 
-This Recipe App is created using React Hooks
+<<<<<<<<<<<< This Recipe App is created using React Hooks.>>>>>>>
+
 On clicking Get Recipes button, a Fetch request is sent to get a JSON response 
 with all the recipe details.
 
