@@ -10,20 +10,6 @@ export default function RecipeCard() {
   const [popupContent, setPopupContent] = useState("");
 
   const showRecipeDetails = (e) => {
-    /*const updatePopup = () => {
-      setPopupContent(
-        popupContent.concat(
-          <ol>
-            {recipe
-              ? recipe.instructions.map((instructions) => (
-                  <li className="list">{instructions}</li>
-                ))
-              : ""}
-          </ol>
-        )
-      );
-    };*/
-
     const recipe = e.target.value;
     const name = e.target.name;
     console.log("recipe", recipe);
@@ -79,14 +65,7 @@ export default function RecipeCard() {
                           showPopUp={showPopUp}
                           closePopUp={() => setShowPopUp(false)}
                         >
-                          <div>
-                            {popupContent}
-                            {/*} <ol>
-                              {recipe.instructions.map((instructions) => (
-                                <li className="list">{instructions}</li>
-                              ))}
-                            </ol>*/}
-                          </div>
+                          <div>{popupContent}</div>
                         </PopUp>
                       )}
                     </div>
