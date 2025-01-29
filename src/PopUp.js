@@ -1,3 +1,10 @@
+/*
+Create a custom PopUp Component to display dynamic details.
+
+Author: Monica
+Date : Jan 2025
+FileName : PopUp.js
+*/
 import React from "react";
 
 function PopUp({ showPopUp, closePopUp, children }) {
