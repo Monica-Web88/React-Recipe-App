@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 
 function PopUp({ showPopUp, closePopUp, children }) {
   if (!showPopUp) {
@@ -7,8 +6,8 @@ function PopUp({ showPopUp, closePopUp, children }) {
   }
   return (
     <div className="PopUp">
-      <button onClick={closePopUp}>close</button>
       {children}
+      <button onClick={closePopUp}>close</button>
     </div>
   );
 }
