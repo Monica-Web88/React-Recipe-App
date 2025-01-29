@@ -10,9 +10,41 @@ export default function RecipeCard() {
   const [popupContent, setPopupContent] = useState("");
 
   const showRecipeDetails = (e) => {
+    /*const updatePopup = () => {
+      setPopupContent(
+        popupContent.concat(
+          <ol>
+            {recipe
+              ? recipe.instructions.map((instructions) => (
+                  <li className="list">{instructions}</li>
+                ))
+              : ""}
+          </ol>
+        )
+      );
+    };*/
+
     const recipe = e.target.value;
+    const name = e.target.name;
     console.log("recipe", recipe);
-    setPopupContent(recipe);
+
+    var recipeInst = "";
+
+    if (recipe != undefined && recipe != "") {
+      var recipeArray = recipe.split(",");
+      recipeInst = (
+        <Fragment>
+          <h1>{name}</h1>
+          <ol>
+            {recipeArray.map((instructions) => (
+              <li className="list">{instructions}</li>
+            ))}
+          </ol>
+        </Fragment>
+      );
+    }
+    console.log("recipe Instr after : ", recipeInst);
+    setPopupContent(recipeInst);
     setShowPopUp(true);
   };
 
@@ -34,6 +66,7 @@ export default function RecipeCard() {
                       <h1>{recipe.name}</h1>
                       <img className="image" src={recipe.image} />
                       <button
+                        name={recipe.name}
                         onClick={showRecipeDetails}
                         value={recipe.instructions}
                       >
