@@ -1,3 +1,13 @@
+/*
+Recipe Card Displays the list of Cards with Recipe Name.
+On clicking View Recipe, the Recipe Instructions are displyed in a
+Custom popup component.
+
+Author: Monica
+Date : Jan 2025
+FileName : RecipeCard.js
+*/
+
 import "./styles.css";
 import "./recipe.css";
 import { Fragment, useContext, useState, React } from "react";
