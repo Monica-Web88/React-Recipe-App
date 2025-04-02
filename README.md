@@ -1,5 +1,4 @@
 # React-Recipe-App
-Created with CodeSandbox
 
 <<<<<<<<<<<< This Recipe App is created using React Hooks.>>>>>>>
 
