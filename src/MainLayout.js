@@ -21,7 +21,7 @@ const MainLayout = () => {
 
   return (
     <div className="alignClass">
-      <div className="mainDiv"> Recipes World !! </div>
+      <div className="mainDiv"> Monica's Recipe App </div>
       <button id="generateBtn" type="submit" onClick={generateJSON}>
         GET Recipes
       </button>
