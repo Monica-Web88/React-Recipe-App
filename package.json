@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "homepage": "https://monica-web88.github.io/React-Recipe-App/",
+  "homepage": "https://monica-web88.github.io/React-Recipe-App/public",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
